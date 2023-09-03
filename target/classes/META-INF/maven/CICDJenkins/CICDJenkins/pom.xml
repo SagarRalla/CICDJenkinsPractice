@@ -3,4 +3,32 @@
   <groupId>CICDJenkins</groupId>
   <artifactId>CICDJenkins</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+         <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <mainClass>com.ibm.practice.CICDJenkinsPractice1</mainClass> <!-- Replace with your main class -->
+            </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.7.0</version>
+		</dependency>
+	</dependencies>
 </project>

@@ -2,7 +2,7 @@ package com.ibm.practice;
 
 import org.testng.annotations.Test;
 
-public class CICDJenkinsPractice {
+public class CICDJenkinsPractice1 {
 
 	@Test
 	public static void main(String[] args) {
